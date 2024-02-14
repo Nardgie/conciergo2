@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+
+    <!-- <link rel="stylesheet" href="./assets/events.css" media="screen"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=Orbitron:wght@400;600&family=Sixtyfour&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="/Users/nardge/bootcamp/project1/project-1/bulma.css">
+    <link rel="stylesheet" href="./assets/css/plan.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+
+        $(function () {
+
+            var typed = new Typed("#typed", {
+                strings: [],
+                typeSpeed: 30,
+                callback: function () {
+                    shift();
+                }
+            });
+
+        });
+        function shift() {
+            $(".head-wrap").addClass("shift-text");
+            terminalHeight();
+        }
+
+        function terminalHeight() {
+            var termHeight = $(".terminal-height");
+            var value = termHeight.text();
+            value = parseInt(value);
+            setTimeout(function () {
+                if (value > 10) {
+                    value = value - 1;
+                    this.txtValue = value.toString();
+                    termHeight.text(this.txtValue);
+                    self.terminalHeight();
+                }
+                else {
+                    clearTimeout();
+                }
+            }, 10);
+        }
+    </script>
+    <title>Plan It!</title>
+
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+           * element that contains the map. */
+    
+        .header {
+            background-position: top right;
+        }
+    
+        .carbonads-wrapper {
+            width: 330px;
+            height: 120px;
+        }
+    
+        #carbonads * {
+            margin: initial;
+            padding: initial;
+        }
+    
+        #carbonads {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+                sans-serif;
+        }
+    
+        #carbonads {
+            display: flex;
+            max-width: 330px;
+            background-color: hsl(0, 0%, 98%);
+            box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
+            padding: 5px;
+            z-index: 100;
+        }
+    
+        #carbonads a {
+            color: inherit;
+            text-decoration: none;
+        }
+    
+        #carbonads a:hover {
+            color: inherit;
+        }
+    
+        #carbonads span {
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+    
+        #carbonads .carbon-wrap {
+            display: flex;
+        }
+    
+        #carbonads .carbon-img {
+            display: block;
+            margin: 0;
+            line-height: 1;
+        }
+    
+        #carbonads .carbon-img img {
+            display: block;
+        }
+    
+        #carbonads .carbon-text {
+            font-size: 13px;
+            padding: 10px;
+            margin-bottom: 16px;
+            line-height: 1.5;
+            text-align: center;
+        }
+    
+        #carbonads .carbon-poweredby {
+            display: block;
+            padding: 6px 8px;
+            background: #f1f1f2;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 1;
+            border-top-left-radius: 3px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    
+        .cta-buttons {
+            min-height: 110px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+        @media (max-width: 600px) {
+            .cta-buttons {
+                flex-wrap: wrap;
+            }
+    
+            .cta-buttons .btn {
+                margin-bottom: 20px;
+            }
+        }
+    
+        gmp-map {
+            height: 80%;
+            width: 50%;
+    
+        }
+    
+        .header {
+            background-position: top right;
+        }
+    
+        @media screen and (max-width: 1500px) {
+            .header {
+                background-size: auto;
+            }
+        }
+    
+        .header {
+            width: 100%;
+            min-height: 450px;
+            margin: 0 auto 30px;
+            padding: 10px 0;
+            background: url(../img/header-bg.jpg) top center no-repeat fixed;
+            background-size: 100%;
+        }
+    
+        .shift-text {
+            margin: 80px auto 110px;
+        }
+    
+        .head-wrap {
+            margin: 30px auto 30px;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+            text-align: center;
+        }
+    
+        .header .h1 {
+            margin: 10px 0 20px;
+            font-size: 5em;
+            text-align: center;
+            color: #fff;
+            text-shadow: #000 6px 12px 20px;
+        }
+    
+        .text-editor-wrap {
+            display: block;
+            margin: auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
+            clear: both;
+            overflow: hidden;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        }
+    
+        h1.title-bar {
+            padding: 5px 0;
+            font-family: "Orbitron", sans-serif;
+            font-weight: 700;
+            text-align: center;
+            text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
+            letter-spacing: 2px;
+        }
+    
+        .shift-text .text-body {
+            height: 350px;
+        }
+    
+        .text-body {
+            height: 250px;
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 10px;
+            color: #f0f0f0;
+            text-shadow: #000 0px 1px 0px;
+            font-family: "Orbitron", sans-serif;
+            font-size: 4em;
+            line-height: 2em;
+            font-weight: 700;
+            text-align: center;
+            align-self: center;
+            overflow: hidden;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        }
+    
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 80%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        #map {
+            width: 500px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="./index.html">
+                <img src="./assets/images/Subject.png" alt="Logo" width="112"
+                    height="112px">
+                CONCIERGO
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="button is-info is-medium navbar-item"
+                    href="./plan.html">
+                    Plan It!
+                </a>
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item button is-dark is-medium is-link" href="./concerts.html">
+                    Concerts Near You
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        More
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="./nightlife.html">
+                            Nearby Bars
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Nearby Restaurants
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Include events content here -->
+
+        <!--HERO BANNER AND WELCOME-->
+        <section class="hero is-large">
+            <wc-typed-js strings="Welcome To Conciergo., Concert? Concierge? No, Conciergo." loop="true">
+                <h1 class="typed" id="element"></h1>
+            </wc-typed-js>
+            <div class="hero-body">
+                <div class="container">
+                    <div class="header">
+                        <div class="head-wrap shift-text">
+                            <h1 class="h1 title-bar">CONCIERGO</h1>
+                            <div class="text-editor-wrap">
+                                <div class="text-body">
+                                    <span id="typed"></span><span class="typed-cursor">|</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Info tiles Eventually to be dynamically updated with JS-->
+        <!--Delete other lines (second child divs and articles) for JS-->
+        <section class="tile container" id="tileContainer">
+            <h1 class="title" id="planH1">Plan Out The Night Of Your Concert!</h1>
+            <h2 class="sbtitle" id="planH2">Select your concert below to see what restaurants or bars are nearby!</h2>
+                <!-- <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title"></p>
+                        <p class="subtitle"></p>
+                    </article>
+                </div> -->
+                
+                <!--$(.tile).append()-->
+            </div>
+        </section>
+
+        <!--Cardd APPend-->
+        <section class="section">
+            <div class="container has-text-centered" id="events">
+
+        
+                </div>
+        
+                
+            </div>
+        </section>
+
+        <!--Events Card Dropdown-->
+        <div class="columns">
+            <div class="column is-6">
+                <div class="card events-card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Concerts Near You!
+                        </p>
+                        <a href="#" class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span></a>
+                    </header>
+                    <div class="card-table">
+                        <div class="content">
+                            <table class="table is-fullwidth is-striped">
+                                <!--APPEND CARD CONTENT BELOW-->
+                                <tbody id="concerts">
+                                    <!-- <tr>
+                                        <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                        <td>Lorum ipsum dolem aire</td>
+                                        <td class="level-right"><a class="button is-small is-primary"
+                                                href="#">Action</a></td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="card-footer-item">View All</a>
+                        <button class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </footer>
+                
+                </div>
+            </div>
+        </div>
+        <!--Clubs Deopdown-->
+        <div class="columns" id="col-2">
+            <div class="column is-6">
+                <div class="card events-card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Nightclubs Near You!
+                        </p>
+                        <a href="#" class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span></a>
+                    </header>
+                    <div class="card-table">
+                        <div class="content">
+                            <table class="table is-fullwidth is-striped">
+                                <tbody id="clubs">
+                                    <!-- <tr>
+                                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                                <td>Lorum ipsum dolem aire</td>
+                                                <td class="level-right"><a class="button is-small is-primary"
+                                                        href="#">Action</a></td>
+                                            </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a id ="view-all" href="#" class="card-footer-item">View All</a>
+                        <button class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </footer>
+        
+                </div>
+            </div>
+        </div>
+
+        <!--Google Map-->
+    <div id="map" class="is-hidden">
+
+    </div>
+
+        
+    </main>
+    <footer>
+    
+    
+        <div>
+            <a href="./index.html"> <img class="is-flex is-align-self-center" src="./assets/images/Subject.png" alt="logo" width="100"
+                    height=50px"> </a>
+        </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj3wvLnBaKeIBdhCqaNrp14KyEq9KB1pY&libraries=places"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script src="./assets/js/plan.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['Welcome To The Plan It Page', 'Concert?', 'Looking to pre-game or post-game?', 'Yeah?', 'ConceierGO!!!'],
+            typeSpeed: 50,
+            smartBackspace: true, // this is a default
+            loop: true
+        });
+        $("#typed").append(typed);
+    </script>
+</body>
+
+</html>
+
+

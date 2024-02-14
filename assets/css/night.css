@@ -1,0 +1,272 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+#map {
+    width: 500px;
+    height: 400px;
+}
+
+#location {
+    display: none;
+}
+
+article.open p {
+    color: white;
+}
+
+
+
+main {
+    /* background: url("https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background: url("/assets/images/purpleClubbing.png");
+    background-size: cover;
+    margin: 0;
+    height: 2000px;
+}
+
+body {
+    margin: 0;
+    border: 0;
+}
+
+.navbar-item {
+    font-family: "Orbitron", sans-serif;
+    color: #000;
+
+}
+
+.navbar .button {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.navbar-brand .navbar-item {
+    font-family: "Orbitron", sans-serif;
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+.navbar-start .navbar-item .field .control .input {
+    width: 500px;
+    margin-left: 4rem;
+}
+
+
+
+.hero {
+    background: url("/assets/images/bg.jpg") center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.tile .subtitle {
+    font-weight: 600;
+    color: #fa0c0c;
+}
+
+.tile {
+    border-radius: 50%;
+    
+    object-fit: cover;
+    /* margin: 2rem 1.5rem; */
+    flex-basis: calc((100% / 3) - 0rem);
+}
+
+.tile.is-horizontal {
+    max-width: 275px;
+    max-height: 275px;
+    width: 275px;
+    height: 275px;
+}
+
+
+
+
+    /* flex-basis: calc((100% / 3) - 4rem); */
+    /* flex-shrink: 0; */
+    /* border-radius: 50%; */
+
+
+article button {
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+}
+
+article button {
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    max-width: 275px;
+    max-height: 275px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* object-fit: cover; */
+   
+}
+article button {
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+}
+
+
+
+.tile.button.subtitle {
+    
+        
+    border-radius: 50%;
+        
+}
+
+#venues {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 800px;
+    width: 100%;
+    margin: 0 auto;
+    flex-basis: calc((100% / 3) - 0rem); 
+    flex-shrink: 0; 
+}
+
+#venues {
+    position: relative;
+    /* Container must be relative for absolute children */
+}
+
+.card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    margin-bottom: 2rem;
+}
+
+button#runaway-btn {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 5px black;
+}
+/* .tile.is-horizontal.center-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* This centers the element */
+    /* Additional styles for overlapping and animation */
+    /* transition: transform 10s ease-in; */
+    /* Example transition for moving out from center */
+
+
+/* .tile.is-horizontal.original-position {
+    transition: transform 1s;
+    top: -50%;
+    left: -50%; */
+    /* Adjust the timing as needed */
+    /* Define the original position here. */
+    /* For example: */
+    /* transform: translate(var(--translateX), var(--translateY)); */
+
+
+
+/* .tile.is-horizontal.center-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* This centers the element */
+    /* Additional styles for overlapping and animation */
+    /* transition: transform 10s ease-in; */
+    /* Example transition for moving out from center */
+
+
+/* .tile.is-horizontal.original-position {
+    transition: transform 1s;
+    top: -50%;
+    left: -50%;
+    /* Adjust the timing as needed */
+    /* Define the original position here. */
+    /* For example: */
+    /* transform: translate(0, 0);
+
+
+
+
+
+
+.tile .subtitle {
+    font-weight: 600;
+    color: #f8f9fa;
+
+
+
+/* Animation for moving from center to final position */
+@keyframes moveFromCenter {
+    from {
+        transform: translate(0, 0);
+        /* Start from the center */
+    }
+
+    to {
+        /* End at the final position; these will be dynamically set in JS */
+        transform: translate(var(--translate-x), var(--translate-y));
+    }
+}
+
+/* Class that starts the move from center animation */
+.moveFromCenter {
+    animation: moveFromCenter 1s forwards;
+    /* Adjust time as needed */
+}
+
+/* .hero.welcome.is-info {
+    background: url("./images/drinks.jpg");
+    background-size: cover; */
+    /* background: #36D1DC;
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    background: linear-gradient(to right, #5B86E5, #36D1DC); */
+/* } */
+
+/* .hero.welcome .title,
+.hero.welcome .subtitle {
+    color: hsl(192, 17%, 99%);
+} */
+
+
+
+.card .content {
+    font-size: 14px;
+}
+
+.card-footer-item {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8F99A3;
+}
+
+/* .card-footer-item:hover {
+
+} */
+
+.card-table .table {
+    margin-bottom: 0;
+}
+
+.events-card .card-table {
+    max-height: 250px;
+    overflow-y: scroll;
+}

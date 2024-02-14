@@ -1,0 +1,166 @@
+#map {
+    width: 500px;
+    height: 400px;
+}
+
+#location {
+    display: none;
+}
+
+p {
+    color: white;
+}
+
+
+
+main {
+    /* background: url("https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background: url("/assets/images/purpleClubbing.png") center;
+    background-size: cover;
+    margin: 0;
+    height: 2000px;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    margin: 0;
+    border: 0;
+}
+
+.hero {
+    background: url("/assets/images/bg.jpg") center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container h1, h2 {
+    margin: 10px 0 20px;
+    font-size: 4em;
+    text-align: center;
+    color: #fff;
+    text-shadow: #000 0px 2px 4px;
+    font-family: "Orbitron", sans-serif;
+}
+
+.container h2 {
+    display: block;
+    font-size: 3em;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.navbar-item {
+    font-family: "Orbitron", sans-serif;
+    color: #000;
+
+}
+
+.navbar .button {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.navbar-brand .navbar-item {
+    text-shadow: #000 0px 2px 4px;
+    font-family: "Orbitron", sans-serif;
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+.navbar-start .navbar-item .field .control .input {
+    width: 500px;
+    margin-left: 4rem;
+}
+
+/* figure.image{
+    border-radius: 50%;
+} */
+/* .card .card-image .image img.venue-img, .card, .tile {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+} */
+
+
+
+.is-parent {
+    margin: 1rem 2rem;
+    height: 400px;
+    width: 400px;
+}
+
+#tileContainer {
+    margin: 1rem 2rem;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.info-tiles .subtitle {
+    font-weight: 300;
+    color: #8F99A3;
+}
+
+.card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    margin-bottom: 2rem;
+}
+
+.card-header-title {
+    color: #8F99A3;
+    font-weight: 400;
+}
+
+
+
+.tile .subtitle {
+    font-weight: 300;
+    color: #8F99A3;
+}
+
+
+.card .content {
+    font-size: 14px;
+}
+
+.card-footer-item {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8F99A3;
+}
+
+/* .card-footer-item:hover {
+
+} */
+
+.card-table .table {
+    margin-bottom: 0;
+}
+
+.events-card .card-table {
+    max-height: 250px;
+    overflow-y: scroll;
+}

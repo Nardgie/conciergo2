@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/events.css" media="screen"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=Orbitron:wght@400;600&family=Sixtyfour&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+
+    <link rel="stylesheet" href="/Users/nardge/bootcamp/project1/project-1/bulma.css">
+    <link rel="stylesheet" href="./assets/css/concerts.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <style>
+        ::-webkit-scrollbar {
+            height: 10px;
+            width: 10px
+        }
+    
+        ::-webkit-scrollbar-track {
+            background: #efefef;
+            border-radius: 6px
+        }
+    
+        ::-webkit-scrollbar-thumb {
+            background: #d5d5d5;
+            border-radius: 6px
+        }
+    
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c4c4c4
+        }
+    </style>
+
+    <title>Find Concerts Near You!</title>
+</head>
+
+<body>
+    <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="./index.html">
+                <img src="./assets/images/Subject.png" alt="Logo" width="112" height="112px">
+                CONCIERGO
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="button is-info is-medium navbar-item" href="./plan.html">
+                    Plan It!
+                </a>
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item button is-dark is-medium is-link" href="./concerts.html">
+                    Concerts Near You
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        More
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="./nightlife.html">
+                            Nearby Bars
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Nearby Restaurants
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Include events content here -->
+
+        <!--HERO BANNER AND WELCOME-->
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        
+                    </h1>
+                    <h2 class="subtitle">
+                        
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Cardd APPend-->
+
+        <div 
+            w-type="event-discovery" w-tmapikey="9xDaR1A6yRioMl6Xk2GG6ccydbFsnQZp"
+            w-googleapikey="AIzaSyCj3wvLnBaKeIBdhCqaNrp14KyEq9KB1pY" w-keyword="music" w-theme="grid" w-colorscheme="custom"
+            w-width="100%" w-height="550" w-size="100" w-border="4" w-borderradius="4" w-radius="25" w-period="month"
+            w-layout="fullwidth" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid=""
+            w-proportion="custom" w-titlelink="off" w-sorting="dateAscending" w-id="id_944wlf" w-source=""
+            w-branding="Ticketmaster" w-latlong="28.5612125,-81.4890603" w-minheight="" w-maxheight="1000" w-gridcolumns="4"
+            w-loadingeventspinnercolor="#e432ed" w-poweredbybackgroundcolor="#18355e" w-buybuttontextcolor="#ffffff"
+            w-descriptioncolor="#2e5de8" w-datecolor="#594f4f" w-buybuttonbackgroundcolor="#bb00e0" w-titlecolor="#4f2473"
+            w-titlehovercolor="#b05656" w-countercolor="#121314" w-bordercolor="#0d2d8f" w-backgroundcolor="#b9d4d0">
+        </div>
+
+        <footer>
+        
+        
+            <div>
+                <a href="./index.html"> <img class="is-flex is-align-self-center" src="./assets/images/Subject.png" alt="logo"
+                        width="100" height=50px"> </a>
+            </div>
+        </footer>
+    </main>
+    <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj3wvLnBaKeIBdhCqaNrp14KyEq9KB1pY&libraries=places"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script src="./assets/js/concerts.js"></script>
+</body>
+
+</html>
