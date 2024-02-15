@@ -15,7 +15,7 @@ p {
 
 main {
     /* background: url("https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center; */
-    background: url("/assets/images/soft-lightConcert.png") center;
+    background: url("/Users/nardge/bootcamp/project1/pro1/conciergo2/assets/images/soft-lightConcert.png") center;
     background-size: cover;
     margin: 0;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .hero {
-    background: url("/assets/images/vibrantConcert.png") center;
+    background: url("/Users/nardge/bootcamp/project1/pro1/conciergo2/assets/images/vibrantConcert.png") center;
     background-size: cover;
     position: relative;
     overflow: hidden;
