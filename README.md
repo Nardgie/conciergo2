@@ -17,7 +17,7 @@ Conciergo is designed to be your personal concierge for discovering and planning
 
 No istallation required!
 
-Go to https://github.io/conciergo to use the site.
+Go to https://nardgie.github.io/conciergo to use the site.
 
 ## Usage
 
